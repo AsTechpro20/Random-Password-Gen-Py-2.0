@@ -16,4 +16,13 @@ length = 8
 #printing
 password = "".join(random.sample(string,length))
 ready = input ("Are You Ready to See your Password: ")
-print ("Here is your password:",Username + password )
+if ready.lower() == 'no':
+    print ("ok")
+elif ready.lower() == 'yes':
+    print ("Here is your password:",Username + password)
+else:
+ yesorno = input ("Type Yes Or No:")
+ if yesorno.lower() == 'no':
+    print ("ok")
+ elif yesorno.lower() == 'yes':
+   print ("Here is your password:",Username + password)
